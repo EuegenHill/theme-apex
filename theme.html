@@ -128,7 +128,7 @@
       <div class="span6 offset1 posts">
 
           {% if is_tag %}
-          <h4 class="sub-heading span6">Showing all posts tagged {{ tag }}:</h4>
+          <h4 class="sub-heading span6">Все посты с тегом - {{ tag }}:</h4>
           {% endif %}
 
           {% if posts %}
@@ -208,7 +208,7 @@
             {% endif %}
           </div>
         <div class="date"> 
-        <p class="read-more">Ищите посты по этим тегам:</p> </div>
+        <p class="read-more">Ищите другиепосты по этим тегам:</p> </div>
           {% if site.tags %}
   <div class="tags">
     {% for tag in site.tags %}
