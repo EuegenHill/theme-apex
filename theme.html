@@ -207,6 +207,15 @@
             </ul>
             {% endif %}
           </div>
+          
+          {% if site.tags %}
+  <div class="tags">
+    {% for tag in site.tags %}
+      <a href="/tag/{{ tag.name }}">#{{ tag.name }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
+
           <div class="post-footer">
             <p class="back"><a href="/">&laquo; Назад</a></p>
           </div>
